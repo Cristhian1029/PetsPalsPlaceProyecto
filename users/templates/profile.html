@@ -1,0 +1,14 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+</head>
+<body>
+    <h2>Profile</h2>
+    <p>Username: {{ user.username }}</p>
+    <p>Email: {{ user.email }}</p>
+    <a href="{% url 'update_profile' %}">Update Profile</a>
+    <a href="{% url 'delete_account' %}">Delete Account</a>
+</body>
+</html>
